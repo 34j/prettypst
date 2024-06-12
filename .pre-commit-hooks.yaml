@@ -1,7 +1,7 @@
 - id: prettypst
   name: prettypst
   description: Format files with prettypst
-  entry: prettypst
+  entry: bash -c 'for x in "$@"; do prettypst "$x"; done' --
   language: rust
   types: [file]
   files: \.typ$

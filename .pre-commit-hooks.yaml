@@ -1,0 +1,7 @@
+- id: prettypst
+  name: prettypst
+  description: Format files with prettypst
+  entry: prettypst
+  language: rust
+  types: [file]
+  files: \.typ$

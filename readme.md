@@ -62,6 +62,17 @@
 	- `--use-configuration`
 		- `prettypst.toml` must be in the current working directory or a parent folder
 
+### pre-commit
+
+Add this to your `.pre-commit-config.yaml`:
+
+```yaml
+  - repo: https://github.com/antonWetzel/prettypst
+    rev: ''  # Use the sha / tag you want to point at
+    hooks:
+      - id: prettypst
+```
+
 ## Settings
 
 - create configuration with `prettypst [--style=otbs] --save-configuration`

@@ -1,7 +1,8 @@
 - id: prettypst
   name: prettypst
-  description: Format files with prettypst
-  entry: bash -c 'for x in "$@"; do echo "$x" && prettypst "$x"; done' --
+  description: Format files with prettypst        
+  entry: bash
+  args: ['-c', 'echo $@ | xargs -n1 prettypst']
   language: rust
   types: [file]
   files: \.typ$
